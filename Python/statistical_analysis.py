@@ -82,7 +82,7 @@ import statsmodels.stats.multicomp as mc
 import glob
 import matplotlib.pyplot as plt
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
-path=rf'/content/drive/MyDrive/xyc_geology_sub_sample.csv'
+path=r'/content/drive/MyDrive/zy_change_2011-2019_terrainclass_all.csv'
 df=pd.read_csv(path)
 
 comp = mc.MultiComparison(df['ndvi'], df['geo'])
@@ -93,7 +93,7 @@ post_hoc_res.summary()
 
 """spearman coefficient"""
 
-path = r'/Users/zhongchenxi/change_raw/zy_change_2011-2019_processed.csv'
+path = r'/content/drive/MyDrive/zy_change_2011-2019_terrainclass_all.csv'
 df = pd.read_csv(path)
 df = df[(df['slo']>30) & (df['slo']<80)]
 # print(df)
