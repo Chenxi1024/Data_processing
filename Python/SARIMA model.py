@@ -66,7 +66,7 @@ plt.show()
 
 
 #load prepared data
-df = pd.read_csv(r'/Users/zhongchenxi/zy_month_mean_evi.csv',usecols=['evi','year'])
+df = pd.read_csv(r'/Users/zy_month_mean_evi.csv',usecols=['evi','year'])
 df['year'] = pd.to_datetime(df['year'])
 
 
