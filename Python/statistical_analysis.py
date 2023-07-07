@@ -85,7 +85,7 @@ from statsmodels.stats.multicomp import pairwise_tukeyhsd
 path=rf'/content/drive/MyDrive/xyc_geology_sub_sample.csv'
 df=pd.read_csv(path)
 
-comp = mc.MultiComparison(df['fvc'], df['geology'])
+comp = mc.MultiComparison(df['ndvi'], df['geo'])
 post_hoc_res = comp.tukeyhsd()
 post_hoc_res.summary()
 
