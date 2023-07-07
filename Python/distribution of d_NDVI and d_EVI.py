@@ -23,7 +23,7 @@ import matplotlib.colors as colors
 
 
 # Distribution of d_NDVI in Obara
-ndvi = gdal.Open(r'/Users/zhongchenxi/change_raw/xyc_change_1985-2011.tif')
+ndvi = gdal.Open(r'/Users/change_raw/xyc_change_1985-2011.tif')
 ndvi_data = ndvi.GetRasterBand(1).ReadAsArray().astype(np.float32)
 
 
@@ -63,7 +63,7 @@ plt.tight_layout()
 
 
 #Distribution of d_NDVI in Shobara
-ndvi = gdal.Open(r'/Users/zhongchenxi/change_raw/zy_change_2011-2019.tif')
+ndvi = gdal.Open(r'/Users/change_raw/zy_change_2011-2019.tif')
 ndvi_data = ndvi.GetRasterBand(1).ReadAsArray().astype(np.float32)
 
 
@@ -107,7 +107,7 @@ plt.tight_layout()
 
 
 #Distribution of d_EVI in Obara
-evi = gdal.Open(r'/Users/zhongchenxi/change_raw/xyc_change_1985-2011.tif')
+evi = gdal.Open(r'/Users/change_raw/xyc_change_1985-2011.tif')
 evi_data = evi.GetRasterBand(2).ReadAsArray().astype(np.float32)
 
 
@@ -148,7 +148,7 @@ plt.tight_layout()
 
 
 #Distribution of d_EVI in Shobara
-evi = gdal.Open(r'/Users/zhongchenxi/change_raw/zy_change_2011-2019.tif')
+evi = gdal.Open(r'/Users/change_raw/zy_change_2011-2019.tif')
 evi_data = evi.GetRasterBand(2).ReadAsArray().astype(np.float32)
 
 
